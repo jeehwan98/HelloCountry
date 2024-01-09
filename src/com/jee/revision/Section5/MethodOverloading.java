@@ -1,4 +1,4 @@
-package com.jee.revision.Section5.methodAndApi;
+package com.jee.revision.Section5;
 
 import javax.swing.*;
 

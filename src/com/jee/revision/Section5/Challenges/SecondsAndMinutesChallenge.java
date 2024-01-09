@@ -1,4 +1,4 @@
-package com.jee.revision.Section5.methodAndApi;
+package com.jee.revision.Section5.Challenges;
 
 import org.w3c.dom.ls.LSOutput;
 
@@ -11,7 +11,7 @@ public class SecondsAndMinutesChallenge {
     public static void main(String[] args) {
 
         System.out.println(getDurationString(3945));
-        System.out.println(minutesAndSeconds(65, 8));
+        System.out.println(minutesAndSeconds(59, 8));
     }
 
     public static String getDurationString(int seconds) {
@@ -32,7 +32,11 @@ public class SecondsAndMinutesChallenge {
         int remainingMinutes = minutes % 60; // minutes
         System.out.println("minutes = " + remainingMinutes);
 //        System.out.println(hours + "h " + remainingMinutes + "m " + seconds + "s");
-        return hours + "h " + remainingMinutes + "m " + seconds + "s";
+        if (hours < 1) {    // if no hours, only print minutes and seconds
+            return remainingMinutes + "m " + seconds + "s";
+        } else {
+            return hours + "h " + remainingMinutes + "m " + seconds + "s";
+        }
     }
 }
 //        int hours = minutes / 60;

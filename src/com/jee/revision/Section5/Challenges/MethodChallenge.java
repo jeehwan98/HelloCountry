@@ -1,4 +1,4 @@
-package com.jee.revision.Section5;
+package com.jee.revision.Section5.Challenges;
 
 public class MethodChallenge {
     public static void main(String[] args) {
